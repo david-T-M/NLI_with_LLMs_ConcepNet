@@ -4,7 +4,9 @@ Knowledge and Reasoning Gaps in Large Language Models
 
 Evaluation of LLMs on the NLI task (RTEGLUE, SNLI, SciTail, SICK, Diagnostic corpora)
 
+
 Meta
+
 llama3.1:latest                	91ab477bec9d	4.7 GB	
     Model                                          
         arch            	llama 	                         
@@ -12,6 +14,7 @@ llama3.1:latest                	91ab477bec9d	4.7 GB
         quantization    	Q4_0  	                         
         context length  	131072	                         
         embedding length	4096 
+
 llama3.2:latest                	a80c4f17acd5	2.0 GB	
     Model                                               
         arch            	llama 	                              
@@ -19,7 +22,9 @@ llama3.2:latest                	a80c4f17acd5	2.0 GB
         quantization    	Q4_K_M	                              
         context length  	131072	                              
         embedding length	3072 
+
 Google
+
 gemma2:latest                  	ff02c3702f32	5.4 GB	
     Model                             
         arch            	gemma2	            
@@ -27,6 +32,7 @@ gemma2:latest                  	ff02c3702f32	5.4 GB
         quantization    	Q4_0  	            
         context length  	8192  	            
         embedding length	3584
+
 gemma2:2b                       8ccf136fdd52    1.6 GB
     Model                             
         arch                gemma2              
@@ -36,6 +42,7 @@ gemma2:2b                       8ccf136fdd52    1.6 GB
         embedding length    2304
 
 Miscrosoft
+
 phi3:medium                    	cf611a26b048	7.9 GB	
     Model                                 
         arch            	phi3  	                
@@ -43,6 +50,7 @@ phi3:medium                    	cf611a26b048	7.9 GB
         quantization    	Q4_0  	                
         context length  	131072	                
         embedding length	5120
+
 phi3:latest                    	4f2222927938	2.2 GB	
     Model                                 
         arch            	phi3  	                
