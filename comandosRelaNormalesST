@@ -1,0 +1,204 @@
+
+########                            MUESTREOS
+
+#############################################################
+
+SNLI
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli1.pickle"> salida/relacionesM/SNLI/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli2.pickle"> salida/relacionesM/SNLI/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli3.pickle"> salida/relacionesM/SNLI/log/salida3.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli4.pickle"> salida/relacionesM/SNLI/log/salida4.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli5.pickle"> salida/relacionesM/SNLI/log/salida5.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli6.pickle"> salida/relacionesM/SNLI/log/salida6.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli7.pickle"> salida/relacionesM/SNLI/log/salida7.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli8.pickle"> salida/relacionesM/SNLI/log/salida8.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli9.pickle"> salida/relacionesM/SNLI/log/salida9.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/snli10.pickle"> salida/relacionesM/SNLI/log/salida10.txt &
+
+MultiNLI
+
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli1.pickle"> salida/relacionesM/MultiNLI/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli2.pickle"> salida/relacionesM/MultiNLI/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli3.pickle"> salida/relacionesM/MultiNLI/log/salida3.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli4.pickle"> salida/relacionesM/MultiNLI/log/salida4.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli5.pickle"> salida/relacionesM/MultiNLI/log/salida5.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli6.pickle"> salida/relacionesM/MultiNLI/log/salida6.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli7.pickle"> salida/relacionesM/MultiNLI/log/salida7.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli8.pickle"> salida/relacionesM/MultiNLI/log/salida8.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli9.pickle"> salida/relacionesM/MultiNLI/log/salida9.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/multinli10.pickle"> salida/relacionesM/MultiNLI/log/salida10.txt &
+
+SCITAIL
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail1.pickle"> salida/relacionesM/Scitail/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail2.pickle"> salida/relacionesM/Scitail/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail3.pickle"> salida/relacionesM/Scitail/log/salida3.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail4.pickle"> salida/relacionesM/Scitail/log/salida4.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail5.pickle"> salida/relacionesM/Scitail/log/salida5.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail6.pickle"> salida/relacionesM/Scitail/log/salida6.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail7.pickle"> salida/relacionesM/Scitail/log/salida7.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail8.pickle"> salida/relacionesM/Scitail/log/salida8.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail9.pickle"> salida/relacionesM/Scitail/log/salida9.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/scitail10.pickle"> salida/relacionesM/Scitail/log/salida10.txt &
+
+SICK
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick1.pickle"> salida/relacionesM/SICK/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick2.pickle"> salida/relacionesM/SICK/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick3.pickle"> salida/relacionesM/SICK/log/salida3.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick4.pickle"> salida/relacionesM/SICK/log/salida4.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick5.pickle"> salida/relacionesM/SICK/log/salida5.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick6.pickle"> salida/relacionesM/SICK/log/salida6.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick7.pickle"> salida/relacionesM/SICK/log/salida7.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick8.pickle"> salida/relacionesM/SICK/log/salida8.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick9.pickle"> salida/relacionesM/SICK/log/salida9.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/sick10.pickle"> salida/relacionesM/SICK/log/salida10.txt &
+
+RTEGLUE
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue1.pickle"> salida/relacionesM/RTEGLUE/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue2.pickle"> salida/relacionesM/RTEGLUE/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue3.pickle"> salida/relacionesM/RTEGLUE/log/salida3.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue4.pickle"> salida/relacionesM/RTEGLUE/log/salida4.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue5.pickle"> salida/relacionesM/RTEGLUE/log/salida5.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue6.pickle"> salida/relacionesM/RTEGLUE/log/salida6.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue7.pickle"> salida/relacionesM/RTEGLUE/log/salida7.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue8.pickle"> salida/relacionesM/RTEGLUE/log/salida8.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue9.pickle"> salida/relacionesM/RTEGLUE/log/salida9.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/rteglue10.pickle"> salida/relacionesM/RTEGLUE/log/salida10.txt &
+
+DIAGNOSTICO
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "DIAG/diagnostico.pickle"> salida/relacionesM/DIAG/log/salida1.txt &
+
+
+##################                   muestreos para pesos de votación
+
+#Para esto se cambiaron las salidas de la carpeta salida/relacionesM y data/muestreos por
+#salida/validacion y data/validacion
+
+Scitail
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/pscitail1.pickle"> salida/relaciones/Scitail/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/pscitail2.pickle"> salida/relaciones/Scitail/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "Scitail/pscitail3.pickle"> salida/relaciones/Scitail/log/salida3.txt &
+
+
+RTEGLUE
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/prteglue1.pickle"> salida/relaciones/RTEGLUE/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/prteglue2.pickle"> salida/relaciones/RTEGLUE/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "RTEGLUE/prteglue3.pickle"> salida/relaciones/RTEGLUE/log/salida3.txt &
+
+MultiNLI
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/pmultinli1.pickle"> salida/relaciones/MultiNLI/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/pmultinli2.pickle"> salida/relaciones/MultiNLI/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "MultiNLI/pmultinli3.pickle"> salida/relaciones/MultiNLI/log/salida3.txt &
+
+SICK
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/psick1.pickle"> salida/relaciones/SICK/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/psick2.pickle"> salida/relaciones/SICK/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SICK/psick3.pickle"> salida/relaciones/SICK/log/salida3.txt &
+
+SNLI
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/psnli1.pickle"> salida/relaciones/SNLI/log/salida1.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/psnli2.pickle"> salida/relaciones/SNLI/log/salida2.txt &
+nohup ../anaconda3/envs/rit/bin/python3 Relaciones_TH_s.py "SNLI/psnli3.pickle"> salida/relaciones/SNLI/log/salida3.txt &
+
+
+#################                     CALLS LLMS VALIDACION
+
+Scitail
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "3" "Scitail/"> LLMs/llama3.2/Scitail/validacion/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "3" "Scitail/"> LLMs/gemma2:2b/Scitail/validacion/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "3" "Scitail/"> LLMs/llama3.1/Scitail/validacion/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "3" "Scitail/"> LLMs/gemma2/Scitail/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "3" "Scitail/"> LLMs/phi3:medium/Scitail/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "3" "Scitail/"> LLMs/phi3/Scitail/validacion/salida.txt & 
+
+RTEGLUE
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "3" "RTEGLUE/"> LLMs/llama3.2/RTEGLUE/validacion/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "3" "RTEGLUE/"> LLMs/gemma2:2b/RTEGLUE/validacion/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "3" "RTEGLUE/"> LLMs/gemma2/RTEGLUE/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "3" "RTEGLUE/"> LLMs/phi3:medium/RTEGLUE/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "3" "RTEGLUE/"> LLMs/phi3/RTEGLUE/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "3" "RTEGLUE/"> LLMs/llama3.1/RTEGLUE/validacion/salida.txt &
+
+
+MultiNLI XXXXXXXXXXXXXXXXXXXXXXXXXXX
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "3" "MultiNLI/"> LLMs/gemma2:2b/MultiNLI/validacion/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "3" "MultiNLI/"> LLMs/llama3.1/MultiNLI/validacion/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "3" "MultiNLI/"> LLMs/llama3.2/MultiNLI/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "3" "MultiNLI/"> LLMs/gemma2/MultiNLI/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "3" "MultiNLI/"> LLMs/phi3:medium/MultiNLI/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "3" "MultiNLI/"> LLMs/phi3/MultiNLI/validacion/salida.txt & 
+
+SICK
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "3" "SICK/"> LLMs/gemma2:2b/SICK/validacion/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "3" "SICK/"> LLMs/llama3.2/SICK/validacion/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "3" "SICK/"> LLMs/gemma2/SICK/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "3" "SICK/"> LLMs/phi3/SICK/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "3" "SICK/"> LLMs/phi3:medium/SICK/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "3" "SICK/"> LLMs/llama3.1/SICK/validacion/salida.txt & 
+
+SNLI
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM2.py "gemma2:2b" "3" "SNLI/"> LLMs/gemma2:2b/SNLI/validacion/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM2.py "llama3.2" "3" "SNLI/"> LLMs/llama3.2/SNLI/validacion/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM2.py "phi3" "3" "SNLI/"> LLMs/phi3/SNLI/validacion/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM2.py "gemma2" "3" "SNLI/"> LLMs/gemma2/SNLI/validacion/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM2.py "phi3:medium" "3" "SNLI/"> LLMs/phi3:medium/SNLI/validacion/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM2.py "llama3.1" "3" "SNLI/"> LLMs/llama3.1/SNLI/validacion/salida.txt &
+
+
+##################                    CALLS LLMS
+llama3.2
+
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "10" "MultiNLI/"> LLMs/llama3.2/MultiNLI/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "10" "RTEGLUE/"> LLMs/llama3.2/RTEGLUE/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "10" "Scitail/"> LLMs/llama3.2/Scitail/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "10" "SICK/"> LLMs/llama3.2/SICK/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "1" "DIAG/"> LLMs/llama3.2/DIAG/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.2" "10" "SNLI/"> LLMs/llama3.2/SNLI/salida.txt & 
+
+llama3.1
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "10" "MultiNLI/"> LLMs/llama3.1/MultiNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "10" "RTEGLUE/"> LLMs/llama3.1/RTEGLUE/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "10" "Scitail/"> LLMs/llama3.1/Scitail/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "10" "SICK/"> LLMs/llama3.1/SICK/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "1" "DIAG/"> LLMs/llama3.1/DIAG/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "llama3.1" "10" "SNLI/"> LLMs/llama3.1/SNLI/salida.txt &
+
+gemma2:2b
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "10" "MultiNLI/"> LLMs/gemma2:2b/MultiNLI/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "10" "RTEGLUE/"> LLMs/gemma2:2b/RTEGLUE/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "10" "Scitail/"> LLMs/gemma2:2b/Scitail/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "10" "SICK/"> LLMs/gemma2:2b/SICK/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "1" "DIAG/"> LLMs/gemma2:2b/DIAG/salida.txt &
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "gemma2:2b" "10" "SNLI/"> LLMs/gemma2:2b/SNLI/salida.txt & 
+
+gemma2
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "10" "MultiNLI/"> LLMs/gemma2/MultiNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "10" "RTEGLUE/"> LLMs/gemma2/RTEGLUE/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "10" "Scitail/"> LLMs/gemma2/Scitail/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "10" "SICK/"> LLMs/gemma2/SICK/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "1" "DIAG/"> LLMs/gemma2/DIAG/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "gemma2" "10" "SNLI/"> LLMs/gemma2/SNLI/salida.txt & 
+
+
+phi3
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "10" "MultiNLI/"> LLMs/phi3/MultiNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "10" "RTEGLUE/"> LLMs/phi3/RTEGLUE/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "phi3" "10" "Scitail/"> LLMs/phi3/Scitail/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "phi3" "10" "SICK/"> LLMs/phi3/SICK/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM_ST.py "phi3" "1" "DIAG/"> LLMs/phi3/DIAG/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3" "10" "SNLI/"> LLMs/phi3/SNLI/salida.txt &
+
+phi3:medium
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "10" "MultiNLI/"> LLMs/phi3:medium/MultiNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "10" "RTEGLUE/"> LLMs/phi3:medium/RTEGLUE/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "10" "Scitail/"> LLMs/phi3:medium/Scitail/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "10" "SICK/"> LLMs/phi3:medium/SICK/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "1" "DIAG/"> LLMs/phi3:medium/DIAG/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM_ST.py "phi3:medium" "10" "SNLI/"> LLMs/phi3:medium/SNLI/salida.txt & 
+
+# base SNLI
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM0.py "phi3:medium" "10" "SNLI/"> LLMs/phi3:medium/SNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM0.py "phi3" "10" "SNLI/"> LLMs/phi3/SNLI/salida.txt &
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM0.py "gemma2" "10" "SNLI/"> LLMs/gemma2/SNLI/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM0.py "gemma2:2b" "10" "SNLI/"> LLMs/gemma2:2b/SNLI/salida.txt & 
+nohup /home/david/.conda/envs/rit/bin/python3 callsLLM0.py "llama3.1" "10" "SNLI/"> LLMs/llama3.1/SNLI/salida.txt & 
+nohup /home/david/anaconda3/envs/rit/bin/python3 callsLLM0.py "llama3.2" "10" "SNLI/"> LLMs/llama3.2/SNLI/salida.txt & 

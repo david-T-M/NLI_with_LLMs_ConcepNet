@@ -6,8 +6,8 @@ import pickle
 import pandas as pd
 import sys
 
-ruta="salida/finales/"+str(sys.argv[3])
-#ruta="salida/validacion/"+str(sys.argv[3])
+#ruta="salida/finales/"+str(sys.argv[3])
+ruta="salida/validacion/"+str(sys.argv[3])
 corpus=["1","2","3","4","5","6","7","8","9","10"]
 
 definitions=["Group 1 (G1): These relations usually correspond to Entailment.",
@@ -27,7 +27,7 @@ grupos=["ConteosG1","ConteosG2","ConteosG3","ConteosG4"]
 # modelo y donde se almacena los resultados
 model1 = sys.argv[1]
 muestreos=int(sys.argv[2])
-salida="LLMs/"+str(sys.argv[1])+"/"+str(sys.argv[3]) #+"validacion/" # le agregue la ruta donde lo pondra validacion/
+salida="LLMs/"+str(sys.argv[1])+"/"+str(sys.argv[3])+"validacion/" # le agregue la ruta donde lo pondra validacion/
 
 ####
 

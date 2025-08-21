@@ -217,6 +217,48 @@ def found_neg(at_t):
             return True,t
     return False,""
 
+rel_concept=['synonym', 
+             'antonym', 
+             'distinct_from', 
+             'derived_from',
+             'manner_of', 
+             'form_of', 
+             'is_a', 
+             'part_of', 
+             'has_a', 
+             'used_for', 
+             'capable_of', 
+             'at_location', 
+             'entails', 
+             'causes' , 
+             'has_subevent', 
+             'has_first_subevent', 
+             'has_last_subevent', 
+             'has_prerequisite', 
+             'has_property', 
+             'motivated_by_goal', 
+             'desires', 
+             'related_to', 
+             'defined_as', 
+             'located_near', 
+             'has_context', 
+             'similar_to', 
+             'etymologically_related_to', 
+             'causes_desire',
+             'made_of',
+             'receives_action',
+             'created_by']
+
+def check_relationships(wt,wh):
+    for r in rel_concept:
+        if wt in df_diccionario_generales:
+            if wh in df_diccionario_generales[wt][r]:
+                return True,(wt,r,wh)
+        elif wh in df_diccionario_especificas:
+            if wt in df_diccionario_especificas[wh][r]:
+                return True,(wh,r,wt)
+    return False,""
+
 def check_entail_syn(wt,wh):
     # guardo conjuntos de sinonimos para un uso posterior
     if wt in df_diccionario_generales and wh in df_diccionario_generales:
@@ -393,8 +435,7 @@ clases = prueba["gold_label"].to_list()
 
 # lista de listas para dataframe
 new_data = {'Texto':[],'Hipotesis':[],'TextoL':[],'HipotesisL':[],'dicEntT':[],'dicEntH':[],
-            'ConteosR':[],'ConteosG1':[],'ConteosG2':[],'ConteosG3':[],'ConteosG4':[],
-            'clases' : []}
+            'ConteosR':[],'clases' : []}
 
 ##########################################    INICIO DE PROCESO      ############################
 inicio = time.time()
@@ -415,10 +456,6 @@ for i in range(len(textos)):
         new_data['dicEntT'].append([])
         new_data['dicEntH'].append([])
         new_data['ConteosR'].append([])
-        new_data['ConteosG1'].append([])
-        new_data['ConteosG2'].append([])
-        new_data['ConteosG3'].append([])
-        new_data['ConteosG4'].append([])
         new_data['clases'].append(9)
     else:
         print("Correcto")
@@ -429,34 +466,6 @@ for i in range(len(textos)):
         print(hipotesis_i)
         r_h,h_clean_m,lemmas_h,pos_h=representacion_entidadesDavid(nlp,hipotesis_i)
         print(r_h)
-
-        # lista de relaciones
-        lista_rel_G1=[]
-        lista_rel_G2=[]
-        lista_rel_G3=[]
-        lista_rel_G4=[]
-
-        # primero evaluar si existen acronimos que se puedan identificar
-        sinT=[]
-        sinH=[]
-        for t in lemmas_h:
-            if t in df_diccionario_generales:
-                sinH.append((df_diccionario_generales[t]["synonym"]).union(df_diccionario_especificas[t]["synonym"]))
-        print(sinH)
-        new_text=" ".join(lemmas_t)
-        words_found=[]
-        print("--------------------------------------------------------")
-        for e_i in range(len(sinH)):
-            for e_syn in sinH[e_i]:
-                if "_" in e_syn:
-                    nsin=str(e_syn).replace("_"," ")
-                    #print(nsin)
-                    if(" "+nsin+" " in new_text):
-                        lista_rel_G1.append((lemmas_h[e_i],"synonym",nsin))
-                        words_found.append(lemmas_h[e_i])
-                        print("se encontro",lemmas_h[e_i],nsin)
-        print(new_text)
-        print(words_found)
 
         # Matriz de alineamiento para probar la contención de las entidades
 
@@ -476,73 +485,45 @@ for i in range(len(textos)):
         borrar_g=[]
         borrar_c=[]
         borrar_e=[]
-        for c_c in ma.columns:
-            if c_c not in words_found:
-                print("columna a checar",c_c)
-                # filtrar el top 3 de los mejores similitud coseno para cada token de H vs tokens de T que sean mayores a 0
-                # una vez que encontremos quien se sale del ciclo
-                temp=ma[c_c].sort_values(ascending=False)
-                ranks=list(temp[:top_k].index)
-                #valranks=list(temp[:top_k].values)
-                #print(valranks,ranks)
-                matching=False
-                for r_i in range(len(ranks)): 
-                    # relaciones generales
-                    verificacion,rel_found=check_entail_syn(ranks[r_i],c_c) #COMPARACION SINONIMOS DE wt y wh
-                    if verificacion:
-                        verif_att,att_t,att_h=check_atributos(r_t[ranks[r_i]],r_h[c_c])
-                        if verif_att:
-                            lista_rel_G1.append((att_t+" "+ranks[r_i],rel_found,att_h+" "+c_c))
-                            matching=True
-                            break
-                        else:
-                            lista_rel_G2.append((att_t+" "+ranks[r_i],"distinct_from",att_h+" "+c_c))
-                            matching=True
-                            break
-                    # checo en relaciones generales si se encuentra el token de la hipótesis
-                    verificacion,rel_found=check_entail_gen(ranks[r_i],c_c) #COMPARACION GENERAL DE wt y wh
-                    if verificacion:
-                        verif_att,att_t,att_h=check_atributos(r_t[ranks[r_i]],r_h[c_c])
-                        if verif_att:
-                            lista_rel_G1.append((att_t+" "+ranks[r_i],rel_found,att_h+" "+c_c))
-                            matching=True
-                            break
-                        else:
-                            lista_rel_G2.append((att_t+" "+ranks[r_i],"distinct_from",att_h+" "+c_c))
-                            matching=True
-                            break
-                    # contradicciones
-                    verificacion,rel_found=check_contradiction_ant(ranks[r_i],c_c) #COMPARACION CONTRA DE wt y wh
-                    if verificacion:
-                        lista_rel_G2.append((ranks[r_i],rel_found,c_c))
-                        matching=True
-                        break
-                    #conjuntos de información adicional part_of escalar y subir
-                    verificacion,rel_found=check_info_adicional(ranks[r_i],c_c)#COMPARACION NEUTRAL DE wt y wh
-                    if verificacion:
-                        verif_att,att_t,att_h=check_atributos(r_t[ranks[r_i]],r_h[c_c])
-                        if verif_att:
-                            lista_rel_G1.append((att_t+" "+ranks[r_i],rel_found,att_h+" "+c_c))
-                            matching=True
-                            break
-                        else:
-                            lista_rel_G2.append((att_t+" "+ranks[r_i],"distinct_from",att_h+" "+c_c))
-                            matching=True
-                            break
-                    #especificas
-                    verificacion,rel_found=check_neutral_rel(ranks[r_i],c_c)
-                    if verificacion:
-                        lista_rel_G3.append((ranks[r_i],rel_found,c_c))
-                        matching=True
-                        break
-                if matching==False:
-                    lista_rel_G4.append(("","unknown",c_c))
-        lista_rel_ST=[]
-        lista_rel_ST.extend(lista_rel_G1)
-        lista_rel_ST.extend(lista_rel_G2)
-        lista_rel_ST.extend(lista_rel_G3)
-        lista_rel_ST.extend(lista_rel_G4)
 
+        lista_rel_ST=[]
+
+        for c_c in ma.columns:
+            print("columna a checar",c_c)
+            # filtrar el top 3 de los mejores similitud coseno para cada token de H vs tokens de T que sean mayores a 0
+            # una vez que encontremos quien se sale del ciclo
+            temp=ma[c_c].sort_values(ascending=False)
+            ranks=list(temp[:top_k].index)
+            for r_i in range(len(ranks)): 
+                # p_i y h_j
+                print(ranks[r_i],"entidades",c_c)
+                found,r_s = check_relationships(ranks[r_i],c_c)
+                if (found):
+                    print("encontró",r_s)
+                    lista_rel_ST.append(r_s)
+                    at_t=r_t[ranks[r_i]]
+                    at_h=r_h[c_c]
+                    t_temp = set(eliminacion_espacios(at_t.split(",")))
+                    h_temp = set(eliminacion_espacios(at_h.split(",")))
+                    t_atributos =set()
+                    h_atributos =set()
+                    for t_ in t_temp:
+                        if t_ not in STOP_WORDS_RT and t_!="" and t_!=" " and t_!=",":
+                            t_atributos.add(t_)
+                    for h_ in h_temp:
+                        if h_ not in STOP_WORDS_RT and h_!="" and h_!=" " and h_!=",":
+                            h_atributos.add(h_)
+                    print("atributos de T",t_atributos)
+                    print("atributos de H",h_atributos)
+                    for h_a in h_atributos:
+                        for t_a in t_atributos:
+                            # relaciones generales
+                            found2,r_s2=check_relationships(t_a,h_a)
+                            #si hay agregarla en lista
+                            if (found2):
+                                lista_rel_ST.append(r_s2)
+                                print("encontró",r_s2)
+        
         new_data['Texto'].append(texto_i)
         new_data['Hipotesis'].append(hipotesis_i)
         new_data['TextoL'].append(lemmas_t)
@@ -550,14 +531,10 @@ for i in range(len(textos)):
         new_data['dicEntT'].append(r_t)
         new_data['dicEntH'].append(r_h)
         new_data['ConteosR'].append(lista_rel_ST[:])
-        new_data['ConteosG1'].append(lista_rel_G1[:])
-        new_data['ConteosG2'].append(lista_rel_G2[:])
-        new_data['ConteosG3'].append(lista_rel_G3[:])
-        new_data['ConteosG4'].append(lista_rel_G4[:])
         new_data['clases'].append(clases[i])
 
 df_resultados = pd.DataFrame(new_data)
 #df_resultados.to_pickle("salida/finales/"+sys.argv[1]+"_.pickle") #cambiar a solo numero para rapido procesamiento
-df_resultados.to_pickle("salida/validacion/"+sys.argv[1]+"_.pickle") #cambiar a solo numero para rapido procesamiento
+df_resultados.to_pickle("salida/relaciones/"+sys.argv[1]) #cambiar a solo numero para rapido procesamiento
 fin = time.time()
 print("Tiempo que se llevo:",round(fin-inicio,2)," segundos")
